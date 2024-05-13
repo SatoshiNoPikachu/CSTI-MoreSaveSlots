@@ -48,6 +48,7 @@
           <HintPath>C:\Games\Steam\steamapps\common\Card Survival Tropical Island\BepInEx\core\BepInEx.dll</HintPath>
           <Private>False</Private>
         </Reference>
+        <Reference Include="mscorlib" />
         <Reference Include="System"/>
         <Reference Include="System.Core"/>
         <Reference Include="System.Data"/>
@@ -70,8 +71,11 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Helper.cs" />
+        <Compile Include="Localization.cs" />
         <Compile Include="PageButton.cs" />
         <Compile Include="Patcher\GameLoadPatch.cs" />
+        <Compile Include="Patcher\LocalizationManagerPatch.cs" />
         <Compile Include="Patcher\MainMenuPatch.cs" />
         <Compile Include="Patcher\MenuSlotButtonPatch.cs" />
         <Compile Include="Plugin.cs" />

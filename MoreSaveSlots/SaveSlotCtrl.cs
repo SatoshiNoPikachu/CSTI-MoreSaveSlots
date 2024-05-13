@@ -5,7 +5,13 @@ namespace MoreSaveSlots;
 
 public class SaveSlotCtrl : MonoBehaviour
 {
-    public static SaveSlotCtrl Instance { get; private set; }
+    private static SaveSlotCtrl _instance;
+
+    public static SaveSlotCtrl Instance
+    {
+        get => _instance.SafeAccess();
+        private set => _instance = value;
+    }
 
     public static void Create(MainMenu menu)
     {
