@@ -10,6 +10,17 @@ public static class Localization
     private const string KeyPrefix = $"{Plugin.PluginName}_";
     public const string KeyPreviousPage = $"{KeyPrefix}PreviousPage";
     public const string KeyNextPage = $"{KeyPrefix}NextPage";
+    
+    public const string KeySaveGame = $"{KeyPrefix}SaveGame";
+    public const string KeyLoadGame = $"{KeyPrefix}LoadGame";
+    public const string KeyBack = $"{KeyPrefix}Back";
+    public const string KeyDelete = $"{KeyPrefix}Delete";
+    public const string KeyDeleteConfirm = $"{KeyPrefix}DeleteConfirm";
+    public const string KeyYes = $"{KeyPrefix}Yes";
+    public const string KeyNo = $"{KeyPrefix}No";
+    public const string KeyDoYouWantToSave = $"{KeyPrefix}DoYouWantToSave";
+    public const string KeyCurrentSlot = $"{KeyPrefix}CurrentSlot";
+    public const string KeyCurrentSlotAutoSave = $"{KeyPrefix}CurrentSlotAutoSave";
 
     public static void LoadLanguage()
     {

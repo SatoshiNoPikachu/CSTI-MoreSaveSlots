@@ -1,0 +1,10 @@
+SaveGame,保存游戏
+LoadGame,加载游戏
+Back,返回
+Delete,删除
+CurrentSlot,当前档位: {0}
+CurrentSlotAutoSave,当前档位: -1 (自动保存至 {0})
+DeleteConfirm,删除这个存档？
+Yes,是
+No,否
+DoYouWantToSave,是否保存游戏？

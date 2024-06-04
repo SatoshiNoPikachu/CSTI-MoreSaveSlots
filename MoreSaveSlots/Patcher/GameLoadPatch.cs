@@ -17,4 +17,10 @@ public static class GameLoadPatch
     {
         __result = SaveSlotCtrl.GenerateGameFileName(_Index);
     }
+
+    [HarmonyPrefix, HarmonyPatch("SaveGame")]
+    public static void SaveGame_Prefix(ref int _GameIndex)
+    {
+        SaveSlotCtrl.OnSaveGame(ref _GameIndex);
+    }
 }

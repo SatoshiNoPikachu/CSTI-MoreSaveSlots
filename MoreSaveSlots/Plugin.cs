@@ -10,7 +10,7 @@ public class Plugin : BaseUnityPlugin
 {
     private const string PluginGuid = "Pikachu.CSTIMod.MoreSaveSlots";
     public const string PluginName = "MoreSaveSlots";
-    public const string PluginVersion = "1.0.2";
+    public const string PluginVersion = "1.0.3";
 
     // ReSharper disable once MemberCanBePrivate.Global
     internal static Plugin Instance;

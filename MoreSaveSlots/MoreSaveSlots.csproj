@@ -78,8 +78,10 @@
         <Compile Include="Patcher\LocalizationManagerPatch.cs" />
         <Compile Include="Patcher\MainMenuPatch.cs" />
         <Compile Include="Patcher\MenuSlotButtonPatch.cs" />
+        <Compile Include="Patcher\SaveMenuPatch.cs" />
         <Compile Include="Plugin.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="SaveMenuCtrl.cs" />
         <Compile Include="SaveSlotCtrl.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
