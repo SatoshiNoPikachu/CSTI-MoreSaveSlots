@@ -75,6 +75,7 @@
         <Compile Include="Localization.cs" />
         <Compile Include="PageButton.cs" />
         <Compile Include="Patcher\GameLoadPatch.cs" />
+        <Compile Include="Patcher\GameManagerPatch.cs" />
         <Compile Include="Patcher\LocalizationManagerPatch.cs" />
         <Compile Include="Patcher\MainMenuPatch.cs" />
         <Compile Include="Patcher\MenuSlotButtonPatch.cs" />

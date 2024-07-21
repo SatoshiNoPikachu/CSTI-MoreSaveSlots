@@ -23,4 +23,12 @@ public static class GameLoadPatch
     {
         SaveSlotCtrl.OnSaveGame(ref _GameIndex);
     }
+
+    [HarmonyPostfix, HarmonyPatch("SaveGame")]
+    public static void SaveGame_Postfix(int _GameIndex)
+    {
+        var manager = GameManager.Instance.SafeAccess();
+        if (manager is null) return;
+        manager.CurrentGameData = GameLoad.Instance.Games[_GameIndex].MainData;
+    }
 }
